@@ -49,9 +49,7 @@
 
 @media screen and (max-width: 600px) {
   #contact,
-  footer {
-    height: 40vh;
-  }
+  
   #profile {
     height: 83vh;
     margin-bottom: 0;
@@ -100,4 +98,23 @@
   .text-container {
     text-align: justify;
   }
+
+/* Footer styling */
+.footer {
+  position: fixed; /* Keeps footer fixed at the bottom */
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Stretches the footer across the entire width */
+  height: 50px; /* Define a fixed height for the footer */
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 50px; /* Center-align the text vertically */
+}
+
+/* Prevent scrolling below the footer */
+body {
+  overflow: auto; /* Prevent excess scrolling */
+}
+
 }
